@@ -1,13 +1,9 @@
 # TiTemplates
 
-TiTemplates is a collection of Titanium Application Templates that can be invoked at project creation.
+TiTemplates is a collection of Titanium Application Templates that can be invoked from the CLI at project creation.
 
 ## Reasoning
-Titanium Studio has some built-in templates.  However, the CLI also has a mechanism for creating a new project based on a template.
-
-By using the --template tag, you can specify a template name, by default the CLI is using a template called "default".
-
-Templates are stored in your Titanium SDK folder, under templates/apps.
+With the Titanium CLI you can specify a template name using the --template argument. By default the CLI is using a template called "default".  Templates are stored in your Titanium SDK folder, under templates/apps.
 
 This repo is:
 
@@ -16,9 +12,12 @@ This repo is:
 
 After running the script, the user should be able to create a new project with the specified template, for example:
 
-     ti create --template tabs
+     ti create --template xplatform_tabs
      ti create --template android_action_bar
      ti create --template xplatform_nav
+     
+## Notes
+Since templates are stored inside the actual SDK folder, this means that you'll have to re-run the command every time you update to a newer SDK.
      
 ## Collaborators
 Always welcomed
